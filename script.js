@@ -1,12 +1,16 @@
-const toggle = document.querySelector('.menu-toggle');
+const toggle = document.querySelector('.mobile-toggle');
 const links = document.querySelector('.nav-links');
+
 if (toggle && links) {
   toggle.addEventListener('click', () => links.classList.toggle('open'));
   links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
 }
-function handleSubmit(event) {
-  event.preventDefault();
-  const note = document.getElementById('form-note');
-  note.textContent = 'Thank you. Your request has been captured. Connect this form later to email or CRM.';
-  event.target.reset();
-}
+
+const cards = document.querySelectorAll('.service-card, .process-grid div, .pill-grid div');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.12 });
+
+cards.forEach((card) => observer.observe(card));

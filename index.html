@@ -3,200 +3,215 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Opal Pharma | Regulatory Affairs & Pharmaceutical Consulting</title>
-  <meta name="description" content="Opal Pharma is an Egyptian regulatory affairs and pharmaceutical consulting company supporting product registration, compliance, licensing, company establishment, import, export, and market access." />
-  <link rel="stylesheet" href="styles.css" />
+  <title>Opal Pharma | Regulatory Affairs & Pharma Consulting</title>
+  <meta name="description" content="Opal Pharma helps pharmaceutical, cosmetic, medical device, dietary supplement and veterinary companies navigate registration, licensing, compliance, import, export and market access across Egypt and MENA." />
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav container">
+    <div class="container nav">
       <a class="brand" href="#home">
-        <span class="brand-mark">OP</span>
-        <span><strong>Opal Pharma</strong><small>Regulatory & Pharma Consulting</small></span>
+        <img src="assets/opal-logo.jpg" alt="Opal Pharma Logo">
+        <div>
+          <strong>Opal Pharma</strong>
+          <span>Regulatory & Pharma Consulting</span>
+        </div>
       </a>
-      <button class="menu-toggle" aria-label="Open menu">☰</button>
-      <div class="nav-links">
-        <a href="#about">About</a>
+      <button class="mobile-toggle" aria-label="Open menu">☰</button>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
         <a href="#services">Services</a>
         <a href="#industries">Industries</a>
         <a href="#process">Process</a>
-        <a href="#contact" class="nav-cta">Contact Us</a>
-      </div>
-    </nav>
+        <a href="#contact" class="nav-cta">Request Consultation →</a>
+      </nav>
+    </div>
   </header>
 
-  <main id="home">
-    <section class="hero">
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
           <span class="eyebrow">Egyptian Regulatory Affairs Partner</span>
-          <h1>Bringing healthcare products to market with confidence.</h1>
-          <p>Opal Pharma helps manufacturers, importers, and healthcare companies navigate registration, compliance, licensing, documentation, and market access across Egypt and international markets.</p>
+          <h1>Your Trusted Regulatory Affairs Partner <span>in Egypt & MENA</span></h1>
+          <p class="slogan">From registration to export…. We lead the way</p>
+          <p class="lead">
+            We help pharmaceutical, cosmetic, medical device, dietary supplement and veterinary companies navigate registration, licensing, compliance and market access with confidence.
+          </p>
           <div class="hero-actions">
-            <a href="#services" class="btn primary">Explore Services</a>
-            <a href="#contact" class="btn secondary">Request Consultation</a>
+            <a href="#contact" class="btn primary">Request Consultation →</a>
+            <a href="#services" class="btn secondary">Explore Services</a>
           </div>
-          <div class="hero-stats">
+          <div class="stats">
             <div><strong>5+</strong><span>Product Sectors</span></div>
             <div><strong>360°</strong><span>Regulatory Support</span></div>
             <div><strong>Fast</strong><span>Market Access</span></div>
           </div>
         </div>
-        <div class="hero-card">
-          <div class="glass-card">
-            <h3>Core Expertise</h3>
-            <ul>
-              <li>Pharmaceutical Registration</li>
-              <li>Dietary Supplement Licensing</li>
-              <li>Cosmetic Product Notification</li>
-              <li>Medical Device Documentation</li>
-              <li>Import & Export Regulatory Support</li>
-            </ul>
+
+        <div class="hero-visual">
+          <div class="mascot-card">
+            <img src="assets/opal-mascot.png" alt="Opal Pharma mascot">
+          </div>
+          <div class="floating-card card-one">
+            <span>🛡️</span>
+            <p><strong>Regulatory</strong><br>Excellence</p>
+          </div>
+          <div class="floating-card card-two">
+            <span>🎯</span>
+            <p><strong>Market Access</strong><br>Expertise</p>
+          </div>
+          <div class="floating-card card-three">
+            <span>🤝</span>
+            <p><strong>End-to-End</strong><br>Support</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section about">
-      <div class="container split">
-        <div>
-          <span class="section-tag">About Opal Pharma</span>
-          <h2>A regulatory partner built for pharmaceutical growth.</h2>
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-head">
+          <span>What We Do</span>
+          <h2>Our Services</h2>
+          <p>Complete regulatory and business support for healthcare products from dossier preparation to market launch.</p>
         </div>
-        <div class="lead-box">
-          <p>Opal Pharma is a regulatory affairs and pharmaceutical consulting company based in Egypt. We support local and international clients with product registration, compliance strategy, technical documentation, company establishment, and market entry planning.</p>
-          <p>Our approach combines scientific understanding, regulatory awareness, and practical execution to help clients move faster while staying compliant.</p>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="icon">💊</div>
+            <h3>Pharmaceutical Registration</h3>
+            <p>Product registration, variations, renewals, labeling review and life-cycle regulatory support.</p>
+            <a href="#contact">Discuss service →</a>
+          </article>
+          <article class="service-card">
+            <div class="icon">🧴</div>
+            <h3>Cosmetics Notification</h3>
+            <p>Cosmetic product notification, compliance review, claims check and documentation support.</p>
+            <a href="#contact">Discuss service →</a>
+          </article>
+          <article class="service-card">
+            <div class="icon">🩺</div>
+            <h3>Medical Device Services</h3>
+            <p>Device registration, technical file preparation, licensing and regulatory documentation.</p>
+            <a href="#contact">Discuss service →</a>
+          </article>
+          <article class="service-card">
+            <div class="icon">🌿</div>
+            <h3>Dietary Supplements</h3>
+            <p>Registration and compliance support for food supplements, nutraceuticals and wellness products.</p>
+            <a href="#contact">Discuss service →</a>
+          </article>
+          <article class="service-card">
+            <div class="icon">🌍</div>
+            <h3>Import & Export Support</h3>
+            <p>Regulatory support for import, export, documents, certificates and market access requirements.</p>
+            <a href="#contact">Discuss service →</a>
+          </article>
+          <article class="service-card">
+            <div class="icon">🏛️</div>
+            <h3>Company Establishment</h3>
+            <p>Company formation, legal coordination and regulatory infrastructure setup for healthcare businesses.</p>
+            <a href="#contact">Discuss service →</a>
+          </article>
+        </div>
+
+        <div class="feature-strip">
+          <div><span>✅</span>Deep Regulatory Expertise</div>
+          <div><span>🌐</span>Local Knowledge, Global Standards</div>
+          <div><span>⚡</span>Fast Turnaround Time</div>
+          <div><span>🛡️</span>Transparent & Reliable</div>
+          <div><span>🤝</span>Partner in Your Growth</div>
         </div>
       </div>
     </section>
 
-    <section id="services" class="section services">
-      <div class="container">
-        <div class="section-heading center">
-          <span class="section-tag">Our Services</span>
-          <h2>Structured services for every regulatory stage</h2>
-          <p>From early feasibility to final approval, Opal Pharma provides clear, organized, and reliable support.</p>
+    <section id="about" class="section split-section">
+      <div class="container split-grid">
+        <div>
+          <span class="eyebrow dark">About Opal Pharma</span>
+          <h2>Built to simplify regulatory complexity.</h2>
+          <p>
+            Opal Pharma is a regulatory affairs and pharmaceutical consulting partner supporting manufacturers, importers and healthcare companies with product registration, compliance, licensing and market access.
+          </p>
+          <p>
+            Our mission is to help clients move from product idea to market launch with clarity, confidence and a practical regulatory roadmap.
+          </p>
         </div>
-        <div class="service-grid">
-          <article class="service-card featured">
-            <div class="icon">01</div>
-            <h3>Product Registration</h3>
-            <p>End-to-end support for product registration files, authority submissions, follow-up, and approval pathways.</p>
-            <ul><li>Pharmaceuticals</li><li>Supplements</li><li>Cosmetics</li><li>Medical devices</li></ul>
-          </article>
-          <article class="service-card">
-            <div class="icon">02</div>
-            <h3>Regulatory Affairs Consulting</h3>
-            <p>Clear regulatory strategy for product classification, claims review, compliance gaps, and authority requirements.</p>
-          </article>
-          <article class="service-card">
-            <div class="icon">03</div>
-            <h3>Technical Documentation</h3>
-            <p>Preparation and review of dossiers, declarations, certificates, stability documents, labels, and product files.</p>
-          </article>
-          <article class="service-card">
-            <div class="icon">04</div>
-            <h3>Company Establishment</h3>
-            <p>Support for setting up healthcare, cosmetics, supplement, and pharmaceutical-related businesses in Egypt.</p>
-          </article>
-          <article class="service-card">
-            <div class="icon">05</div>
-            <h3>Import & Export Support</h3>
-            <p>Regulatory guidance for importing, exporting, certificates, legal documents, and cross-border product movement.</p>
-          </article>
-          <article class="service-card">
-            <div class="icon">06</div>
-            <h3>Market Access</h3>
-            <p>Helping clients understand market requirements, product opportunities, competitor positioning, and entry routes.</p>
-          </article>
+        <div class="about-panel">
+          <h3>Core Expertise</h3>
+          <ul>
+            <li>Pharmaceutical registration and life-cycle management</li>
+            <li>Medical device technical documentation</li>
+            <li>Cosmetic notification and claims compliance</li>
+            <li>Dietary supplement registration and compliance</li>
+            <li>Import & export regulatory documentation</li>
+          </ul>
         </div>
       </div>
     </section>
 
     <section id="industries" class="section industries">
       <div class="container">
-        <div class="section-heading">
-          <span class="section-tag">Industries We Serve</span>
-          <h2>One partner for multiple healthcare sectors</h2>
+        <div class="section-head">
+          <span>Industries</span>
+          <h2>Sectors We Support</h2>
         </div>
-        <div class="industry-row">
+        <div class="pill-grid">
           <div>Pharmaceuticals</div>
-          <div>Dietary Supplements</div>
-          <div>Cosmetics</div>
           <div>Medical Devices</div>
+          <div>Cosmetics</div>
+          <div>Food Supplements</div>
           <div>Veterinary Products</div>
+          <div>Healthcare Importers</div>
         </div>
       </div>
     </section>
 
     <section id="process" class="section process">
       <div class="container">
-        <div class="section-heading center">
-          <span class="section-tag">How We Work</span>
-          <h2>Simple, transparent, and action-focused</h2>
+        <div class="section-head">
+          <span>How We Work</span>
+          <h2>From registration to export…. We lead the way</h2>
         </div>
-        <div class="timeline">
-          <div><span>1</span><h3>Assessment</h3><p>We review the product, category, documents, and regulatory pathway.</p></div>
-          <div><span>2</span><h3>Planning</h3><p>We define the required documents, timeline, and submission strategy.</p></div>
-          <div><span>3</span><h3>Execution</h3><p>We prepare, organize, and submit the regulatory file with follow-up.</p></div>
-          <div><span>4</span><h3>Approval</h3><p>We support responses, updates, compliance, and post-approval needs.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section why">
-      <div class="container why-card">
-        <div>
-          <span class="section-tag">Why Opal Pharma</span>
-          <h2>Built for accuracy, speed, and trust.</h2>
-          <p>We translate complex regulatory requirements into clear actions, helping your team avoid delays, incomplete files, and unnecessary costs.</p>
-        </div>
-        <div class="check-list">
-          <p>✓ Practical regulatory strategy</p>
-          <p>✓ Organized documentation workflow</p>
-          <p>✓ Healthcare-focused market understanding</p>
-          <p>✓ Support for local and international clients</p>
+        <div class="process-grid">
+          <div><strong>01</strong><h3>Assessment</h3><p>We review your product, documents and target market.</p></div>
+          <div><strong>02</strong><h3>Regulatory Roadmap</h3><p>We define requirements, gaps, timelines and action plan.</p></div>
+          <div><strong>03</strong><h3>Dossier Preparation</h3><p>We prepare and review technical documentation and submissions.</p></div>
+          <div><strong>04</strong><h3>Submission & Follow-up</h3><p>We support registration, licensing and authority follow-up.</p></div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section contact">
-      <div class="container contact-grid">
+      <div class="container contact-card">
         <div>
-          <span class="section-tag">Contact Us</span>
-          <h2>Ready to discuss your product?</h2>
-          <p>Tell us about your product category, target market, and current documentation stage. Our team will help you identify the next regulatory step.</p>
-          <div class="contact-info">
-            <p><strong>Email:</strong> info@opalpharma.com</p>
-            <p><strong>Location:</strong> Cairo, Egypt</p>
-          </div>
+          <span class="eyebrow">Start Your Regulatory Journey</span>
+          <h2>Ready to bring your healthcare product to market?</h2>
+          <p>Tell us about your product and we will help you identify the right regulatory pathway.</p>
         </div>
-        <form class="contact-form" onsubmit="handleSubmit(event)">
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <input type="text" placeholder="Company Name" />
-          <select required>
-            <option value="">Product Category</option>
-            <option>Pharmaceutical</option>
-            <option>Dietary Supplement</option>
-            <option>Cosmetic</option>
-            <option>Medical Device</option>
-            <option>Veterinary Product</option>
-          </select>
-          <textarea placeholder="Tell us about your request" rows="5" required></textarea>
-          <button type="submit" class="btn primary full">Send Request</button>
-          <small id="form-note">This demo form can be connected later to email or CRM.</small>
-        </form>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:info@opalpharma.com">Email Us</a>
+          <a class="btn whatsapp" href="https://wa.me/" target="_blank">WhatsApp</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <a class="floating-whatsapp" href="https://wa.me/" target="_blank" aria-label="WhatsApp">☘</a>
+
+  <footer>
     <div class="container footer-grid">
-      <div><strong>Opal Pharma</strong><p>Regulatory Affairs & Pharmaceutical Consulting</p></div>
+      <div>
+        <img src="assets/opal-logo.jpg" alt="Opal Pharma Logo">
+        <p>Opal Pharma — Regulatory & Pharma Consulting</p>
+      </div>
+      <p>From registration to export…. We lead the way</p>
       <p>© 2026 Opal Pharma. All rights reserved.</p>
     </div>
   </footer>
