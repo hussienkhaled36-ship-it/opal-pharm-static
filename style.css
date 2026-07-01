@@ -116,13 +116,13 @@ a{text-decoration:none;color:inherit}
 .stats span{font-size:13px;color:#e9f2fb}
 .hero-visual{position:relative;min-height:560px}
 .mascot-card{
-  position:absolute;left:7%;bottom:0;width:min(450px,84%);
+  position:absolute;left:18%;bottom:20px;width:min(360px,84%);
   filter:drop-shadow(0 32px 60px rgba(0,0,0,.35));
   animation:float 5s ease-in-out infinite;
 }
 .mascot-card img{width:100%;display:block}
 .floating-card{
-  position:absolute;right:0;
+  position:absolute;right:20;
   display:flex;align-items:center;gap:14px;
   width:230px;padding:18px 20px;
   background:rgba(255,255,255,.9);
