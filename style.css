@@ -29,9 +29,9 @@ a{text-decoration:none;color:inherit}
 .nav{height:86px;display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:14px}
 .brand img{width:72px;height:72px;object-fit:contain}
-.brand strong{display:block;font-size:17px;color:var(--navy)}
-.brand span{font-size:12px;color:var(--muted)}
-.nav-links{display:flex;gap:28px;align-items:center;font-weight:700;font-size:14px}
+.brand strong{display:block;font-size:28px;color:var(--navy)}
+.brand span{font-size:15px;color:var(--muted)}
+.nav-links{display:flex;gap:28px;align-items:center;font-weight:800;font-size:14px}
 .nav-links a:hover{color:var(--olive)}
 .nav-cta{
   padding:15px 22px;
@@ -51,9 +51,11 @@ a{text-decoration:none;color:inherit}
 .hero-bg{
   position:absolute;inset:0;
   background:
-    linear-gradient(90deg, rgba(2,22,52,.98) 0%, rgba(3,42,85,.88) 44%, rgba(3,42,85,.28) 100%),
-    radial-gradient(circle at 80% 30%, rgba(37,167,217,.35), transparent 30%),
-    url("assets/opal-mascot.png");
+    background:
+radial-gradient(circle at top left, rgba(255,215,0,.12), transparent 30%),
+radial-gradient(circle at bottom right, rgba(255,255,255,.08), transparent 35%),
+linear-gradient(135deg,#071B3A 0%,#0B3A73 45%,#0E6AA8 100%),
+url("assets/opal-mascot.png");
   background-size:auto,auto,900px;
   background-repeat:no-repeat;
   background-position:center,right -110px center;
@@ -62,7 +64,22 @@ a{text-decoration:none;color:inherit}
 .hero:after{
   content:"";
   position:absolute;inset:0;
-  background:linear-gradient(180deg,transparent 75%,rgba(255,255,255,.96));
+  background:linear-gradient(180deg,transparent 70%,rgba(255,255,255,.96)100%),
+    radial-gradient(circle at 30% 20%,rgba(255,255,255,.10), transparent 28%),
+    radial-gradient(circle at 70% 70%,rgba(138,150,51,.16), transparent 32%);
+  poiner-events:none;
+  .hero:before{
+  content:"";
+  position:absolute;
+    inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.04)1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.04)1px, transparent 1px);
+    background-size:60px 60px;
+    opacity:.25;
+    pointer-events:none;
+    z-index:1;
+  poiner-events:none;
 }
 .hero-grid{
   position:relative;z-index:2;
@@ -116,7 +133,7 @@ a{text-decoration:none;color:inherit}
 .stats span{font-size:13px;color:#e9f2fb}
 .hero-visual{position:relative;min-height:560px}
 .mascot-card{
-  position:absolute;left:18%;bottom:20px;width:min(360px,84%);
+  position:absolute;left:24%;bottom:20px;width:min(320px,84%);
   filter:drop-shadow(0 32px 60px rgba(0,0,0,.35));
   animation:float 5s ease-in-out infinite;
 }
@@ -256,7 +273,7 @@ footer img{width:68px;height:68px;object-fit:contain;background:#fff;border-radi
 }
 @media(max-width:560px){
   .nav{height:78px}
-  .brand img{width:58px;height:58px}
+  .brand img{width:70px;height:70px}
   .hero h1{font-size:42px}
   .slogan{font-size:19px}
   .section{padding:64px 0}
